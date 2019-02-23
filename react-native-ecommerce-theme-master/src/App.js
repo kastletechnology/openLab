@@ -24,6 +24,7 @@ import LogOut from './screens/LogOut'
 import Line from './resources/components/Line'
 import ListGrid from './screens/Listing/ListGrid'
 import ListSwiper from './screens/Listing/ListSwiper'
+import Login from './screens/Login'
 
 
 import DrawerContent from './DrawerContent'
@@ -70,6 +71,9 @@ const routerConfig = {
   },
   Home: {
     screen: Home,
+  },
+  Login: {
+    screen: Login,
   }
   // LogOut: {
   //   screen: LogOut,

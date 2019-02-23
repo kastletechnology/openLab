@@ -71,7 +71,7 @@ class ListSwiper extends Component {
     }
 
     _pressSeeAllProducts(){
-        Utils.showMessage('You clicked to see all products')
+        this.props.navigation.navigate('ListGrid')
     }
 }
 

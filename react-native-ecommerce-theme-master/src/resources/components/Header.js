@@ -25,7 +25,12 @@ export default class Header extends Component {
     openMenu(){
         this.props.navigation.navigate('DrawerOpen');
     }
+
+    logout() {
+      // TODO: logout function
+    }
     render() {
+      
         return (
             <View style={styles.header}>
                 <View style={styles.menu_icon}>
@@ -38,7 +43,9 @@ export default class Header extends Component {
                 </View>
 
                 <View style={styles.menu_icon}>
-
+                    <TouchableOpacity style={styles.icon_section} onPress={()=>this.logout()}>
+                        <Icon name='sign-out' size={28} color='#fff' style={styles.icon}/>
+                    </TouchableOpacity>
                 </View>
             </View>
         )

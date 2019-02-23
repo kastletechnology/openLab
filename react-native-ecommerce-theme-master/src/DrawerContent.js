@@ -38,7 +38,7 @@ class DrawerContent extends Component {
                             />
                     </TouchableOpacity>
                     <Text style={ styles.name }>ReactAZ.com</Text>
-                    <Text style={ styles.description }>(Free Version)</Text>
+                    {/* <Text style={ styles.description }>(Free Version)</Text> */}
                 </View>
                 <View style={ styles.items }>
                     <DrawerItems

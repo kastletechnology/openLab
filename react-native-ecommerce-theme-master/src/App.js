@@ -20,6 +20,7 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Home from './screens/Home'
+import LogOut from './screens/LogOut'
 import Line from './resources/components/Line'
 import ListGrid from './screens/Listing/ListGrid'
 import ListSwiper from './screens/Listing/ListSwiper'
@@ -69,7 +70,10 @@ const routerConfig = {
   },
   Home: {
     screen: Home,
-  },
+  }
+  // LogOut: {
+  //   screen: LogOut,
+  // }
 }
 
 const MyApp = DrawerNavigator(routerConfig, options);

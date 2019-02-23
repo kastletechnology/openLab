@@ -70,7 +70,7 @@ const homeData = {
                 id: 1,
                 name: 'Hummingbird Watch',
                 imageUri: 'https://c1.staticflickr.com/3/2337/1637193093_f5661532b0_z.jpg?zz=1',
-                prize: 128
+                prize: 12800
             },
             {
                 id: 2,

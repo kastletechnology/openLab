@@ -21,7 +21,7 @@ var {height, width} = Dimensions.get('window');
 const initWidth = width;
 const initHeight = initWidth * (500/900)
 
-class Home extends Component {
+class Details extends Component {
     static navigationOptions = {
         drawerLabel: 'Log Out',
         drawerIcon: ({ tintColor }) => (
@@ -129,4 +129,4 @@ const styles = StyleSheet.create({
     }
 })
 
-module.exports = Home
+module.exports = Details

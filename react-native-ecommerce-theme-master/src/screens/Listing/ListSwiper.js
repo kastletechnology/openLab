@@ -20,7 +20,7 @@ import colors from './../../resources/styles/colors'
 
 import Header from './../../resources/components/Header'
 import homeData from './../../data/home'
-
+import Details from '../../screens/Details'
 import Utils from './../../resources/helpers/Utils'
 
 var {height, width} = Dimensions.get('window');
@@ -67,11 +67,11 @@ class ListSwiper extends Component {
     }
 
     _pressProduct(){
-        Utils.showMessage('You clicked on a product')
+      this.props.navigation.navigate('Details')
     }
 
     _pressSeeAllProducts(){
-        this.props.navigation.navigate('ListGrid')
+      this.props.navigation.navigate('ListGrid')
     }
 }
 

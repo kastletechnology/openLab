@@ -20,11 +20,11 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Home from './screens/Home'
-import LogOut from './screens/LogOut'
 import Line from './resources/components/Line'
 import ListGrid from './screens/Listing/ListGrid'
 import ListSwiper from './screens/Listing/ListSwiper'
 import Login from './screens/Login'
+import Details from './screens/Details'
 
 
 import DrawerContent from './DrawerContent'
@@ -74,6 +74,9 @@ const routerConfig = {
   },
   LogOut: {
     screen: Login,
+  },
+  Details: {
+    screen: Details
   }
 }
 

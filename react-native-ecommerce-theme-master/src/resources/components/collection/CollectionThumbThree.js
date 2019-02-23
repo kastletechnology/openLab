@@ -28,10 +28,10 @@ class CollectionThumbThree extends Component {
         return (
             <TouchableOpacity onPress={ this.props.onPress } style={ styles.holder }>
                 <View style={ styles.imagesHolder }>
-                    <Image style={ styles.bigImage } source={{ uri: this.props.bigImageUri }} />
+                    <Image style={ styles.bigImage } source={ this.props.bigImageUri } />
                     <View>
-                        <Image style={[ styles.smallImage, { marginBottom: 10 } ]} source={{ uri: this.props.smallTopImageUri }} />
-                        <Image style={ styles.smallImage } source={{ uri: this.props.smallBottomImageUri }} />
+                        <Image style={[ styles.smallImage, { marginBottom: 10 } ]} source={ this.props.smallTopImageUri } />
+                        <Image style={ styles.smallImage } source={ this.props.smallBottomImageUri } />
                     </View>
                 </View>
                 <Text style={ styles.name } ellipsizeMode='tail'>{ this.props.name }</Text>

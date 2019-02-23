@@ -17,7 +17,7 @@ class GridProductThumb extends Component {
     render() {
         return (
             <TouchableOpacity style={ styles.holder } onPress={ this.props.onPress }>
-                <Image style={ styles.productImage } source={{ uri: this.props.imageUri }} />
+                <Image style={ styles.productImage } source={this.props.imageUri } />
                 <Text style={ styles.name } ellipsizeMode='tail' numberOfLines={2}>
                     { this.props.name }
                 </Text>

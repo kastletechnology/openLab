@@ -32,12 +32,11 @@ class DrawerContent extends Component {
             <ScrollView style={ styles.holder }>
                 <View style={styles.avatar}>
                     <TouchableOpacity>
-                        <Image
+                        {/* <Image
                             style={ styles.avatar_image }
-                            source={{uri: 'https://reactaz.com/wp-content/uploads/2017/02/logo-e1487520151102.png'}}
-                            />
+                            source={ require('./assets/logo-f.png') }
+                            /> */}
                     </TouchableOpacity>
-                    <Text style={ styles.name }>ReactAZ.com</Text>
                     {/* <Text style={ styles.description }>(Free Version)</Text> */}
                 </View>
                 <View style={ styles.items }>

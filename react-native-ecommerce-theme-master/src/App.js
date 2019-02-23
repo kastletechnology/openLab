@@ -72,12 +72,9 @@ const routerConfig = {
   Home: {
     screen: Home,
   },
-  Login: {
+  LogOut: {
     screen: Login,
   }
-  // LogOut: {
-  //   screen: LogOut,
-  // }
 }
 
 const MyApp = DrawerNavigator(routerConfig, options);

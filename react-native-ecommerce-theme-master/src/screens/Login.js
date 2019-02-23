@@ -37,9 +37,12 @@ export default class Login extends Component {
     render() {
         return (
             <View style={styles.container}>
-
-                <Text>Home Logo</Text>
-
+                <View style={styles.icon_container}>
+                    <Image
+                        style={ styles.logo }
+                        source={ require('.././assets/logo-f.png') }
+                        />
+                </View>
                 <View style={styles.formContainer}>
                     <LoginForm />
                 </View>
@@ -49,11 +52,17 @@ export default class Login extends Component {
 
 }
 const styles = StyleSheet.create({
+    icon_container: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 10
+    },
     container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+      backgroundColor: '#F5FCFF'
     },
     item: {
       flex: 1,
@@ -69,8 +78,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     logo: {
-        position: 'absolute',
-        width: 300,
-        height: 100
+        width: 200,
+        height: 200
     }
   });

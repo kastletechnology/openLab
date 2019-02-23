@@ -54,7 +54,7 @@ export default class Header extends Component {
 
 var styles = StyleSheet.create({
     header: {
-        backgroundColor: '#0033',
+        backgroundColor: '#33cccc',
         flexDirection: 'row',
         justifyContent: 'flex-start',
         height: 50,

@@ -3,38 +3,8 @@ import {Platform, StyleSheet, View, ActivityIndicator, Image, Button, Text} from
 import LoginForm from './LoginForm';
 import ListSwiper from './Listing/ListSwiper'
 export default class Login extends Component {
-  token = true;
-    // componentDidMount () {
-
-    //     // --- POST Method (Login)---
-    //     return fetch(apiHost + "/my/logins/direct", {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify({
-    //         firstParam: 'value1',
-    //         secondParam: 'value2',
-    //       }),
-    //     });
-    
-        // --- GET Method ---
-        // return fetch(apiHost+"/obp/v3.0.0/root")
-        // .then ( (response) => response.json() )
-        // .then ( (responseJson) => {
-    
-        //   this.setState({
-        //     isloading: false,
-        //     dataSource: responseJson,
-        //   })
-    
-        //   console.log(dataSource);
-        // })
-        // .catch((error) => {
-        //   console.log(error)
-        // });
-    // }
-
+  token = false;
+  
     render() {
       return (
         this._checkLogin()

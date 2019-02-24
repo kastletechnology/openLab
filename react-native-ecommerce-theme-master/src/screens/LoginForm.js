@@ -20,28 +20,46 @@ export default class LoginForm extends Component {
 
     // --- POST Method (Login)---
     postMessage = () => {
-        headers_str ={
-            'Content-Type': 'application/json',
-            'Authorization': 'DirectLogin username=${this.state.username}, password=${this.state.password}, consumer_key=${consumerKey}'
-            }
-        console.log(headers_str);
-        fetch(apiHost + "/my/logins/direct", {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'DirectLogin username=skchanag, password=123456789Kk^^, consumer_key=5h5psolgvi1vhe452kwn20bcnwkcusw4vv4j3vjq'
+        // headers_str ={
+        //     'Content-Type': 'application/json',
+        //     'Authorization': 'DirectLogin username=${this.state.username}, password=${this.state.password}, consumer_key=${consumerKey}'
+        //     }
+        // console.log(headers_str);
+        // fetch(apiHost + "/my/logins/direct", {
+        //     method: 'POST',
+        //     headers: {
+        //     'Content-Type': 'application/json',
+        //     "Authorization": "DirectLogin username=skchanag, password=123456789Kk^^, consumer_key=5h5psolgvi1vhe452kwn20bcnwkcusw4vv4j3vjq",
+        // }
+        // })
+        // .then((response) => response.text())
+        // .then((responseText) => {
+        //     // if (responseJson.token == null)
+        //         alert(responseText);
+        //     // else
+        //     //     this.state.dataSource.token = teresponseJson.token;
+        // })
+        // .catch((error) => {
+        //     console.error(error);
+        // });
+        var data = null;
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+            console.log(this.responseText);
         }
-        })
-        .then((response) => response.text())
-        .then((responseText) => {
-            // if (responseJson.token == null)
-                alert(responseText);
-            // else
-            //     this.state.dataSource.token = teresponseJson.token;
-        })
-        .catch((error) => {
-            console.error(error);
         });
+
+        xhr.open("POST", "https://openlab.openbankproject.com/my/logins/direct");
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.setRequestHeader("authorization", "DirectLogin username=skchanag, password=123456789Kk^^, consumer_key=5h5psolgvi1vhe452kwn20bcnwkcusw4vv4j3vjq");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("postman-token", "19908b9f-ba86-c489-957f-b6c1fad3eb46");
+
+        xhr.send(data);
     } 
 
     render() {

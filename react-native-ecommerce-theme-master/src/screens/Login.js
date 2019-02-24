@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, View, ActivityIndicator, Image, Button, Text} from 'react-native';
 import LoginForm from './LoginForm';
-import ListGrid from './Listing/ListGrid'
+import ListSwiper from './Listing/ListSwiper'
 export default class Login extends Component {
-  token = false;
+  token = true;
     // componentDidMount () {
 
     //     // --- POST Method (Login)---
@@ -58,7 +58,7 @@ export default class Login extends Component {
         )
       } else {
           return (
-            <ListGrid />
+            <ListSwiper />
           )
       }
     }

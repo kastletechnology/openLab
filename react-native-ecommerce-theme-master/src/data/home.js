@@ -1,8 +1,8 @@
 'use strict'
 const homeData = {
     watches: {
-        title: 'Watches',
-        description: 'best sellers',
+        title: 'Art',
+        description: 'New Comers',
         items: [
             {
                 id: 1,
@@ -32,8 +32,8 @@ const homeData = {
     },
 
     fashions: {
-        title: 'Fashion',
-        description: 'best sellers',
+        title: 'Technology',
+        description: 'New Comers',
         items: [
             {
                 id: 1,
@@ -63,8 +63,8 @@ const homeData = {
     },
 
     bags: {
-        title: 'Bags',
-        description: 'best sellers',
+        title: 'E-commerce',
+        description: 'New Comers',
         items: [
             {
                 id: 1,

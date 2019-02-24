@@ -6,27 +6,27 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Hummingbird Watch',
+                name: 'Tiffany Key Company',
                 imageUri: require('.././assets/dummy_icon/1.png'),
-                prize: 128
+                prize: 1000000
             },
             {
                 id: 2,
-                name: 'metro - chalkboard leather strap watch, 34mm',
+                name: 'H.U. Dove & Company',
                 imageUri: require('.././assets/dummy_icon/2.png'),
-                prize: 195
+                prize: 1500000
             },
             {
                 id: 3,
-                name: 'Olivia Burton Exclusive Floral Big Dial Watch',
+                name: 'The FJH Music Company  ',
                 imageUri: require('.././assets/dummy_icon/3.png'),
-                prize: 96
+                prize: 2000000
             },
             {
                 id: 4,
-                name: 'Olivia Burton Enchanted Garden Gray Patent Big Dial Watch',
+                name: '3AM Company',
                 imageUri: require('.././assets/dummy_icon/4.png'),
-                prize: 96
+                prize: 800000
             },
         ]
     },
@@ -37,27 +37,27 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Hummingbird Watch',
+                name: 'Kelvin Bee Company ',
                 imageUri: require('.././assets/dummy_icon/5.png'),
-                prize: 128
+                prize: 1000000
             },
             {
                 id: 2,
-                name: 'metro - chalkboard leather strap watch, 34mm',
+                name: 'WCJ Company',
                 imageUri: require('.././assets/dummy_icon/6.png'),
-                prize: 195
+                prize: 1000000
             },
             {
                 id: 3,
-                name: 'Olivia Burton Exclusive Floral Big Dial Watch',
+                name: 'Power M Technology Company',
                 imageUri: require('.././assets/dummy_icon/7.png'),
-                prize: 96
+                prize: 1000000
             },
             {
                 id: 4,
-                name: 'Olivia Burton Enchanted Garden Gray Patent Big Dial Watch',
+                name: 'Brooklynn Company',
                 imageUri: require('.././assets/dummy_icon/8.png'),
-                prize: 96
+                prize: 1000000
             },
         ]
     },
@@ -68,15 +68,15 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Hummingbird Watch',
+                name: 'JIV Sport Company',
                 imageUri: require('.././assets/dummy_icon/9.png'),
-                prize: 12800
+                prize: 1500000
             },
             {
                 id: 2,
-                name: 'metro - chalkboard leather strap watch, 34mm',
+                name: 'Consolidated Contractor Company',
                 imageUri: require('.././assets/dummy_icon/10.png'),
-                prize: 195
+                prize: 1200000
             }
         ]
     },

@@ -49,11 +49,17 @@ class Login extends Component {
     }
 
     login(){
+        console.log('login function is called')
         this.props.navigation.navigate('ListSwiper');
     }
 
+    componentDidlMount() {  
+        console.log('componentDidlMount function is called');
+        this.props.navigation.navigate('ListSwiper');
+     }
+
     // --- POST Method (Login)---
-    // componentWillMount() {  
+    
         postMessage = () => {
             var data = null;
 
@@ -64,7 +70,7 @@ class Login extends Component {
             if (this.readyState === 4) {
                 console.log(this.responseText);
                 this.token = true;
-                // {this.login();}
+               alert(this.responseText);
             }
             });
 
@@ -76,7 +82,7 @@ class Login extends Component {
 
             xhr.send(data);
         } 
-    // }
+        
 
     render() {
         return (
@@ -88,7 +94,7 @@ class Login extends Component {
         if(this.token === false) {
             return (
                 <Container>
-                    {/* <Header navigation={this.props.navigation} title="Login"/> */}
+                    <Header navigation={this.props.navigation} title="Login"/>
                     <View style={styles.container}>
                         <View style={styles.icon_container}>
                          <Image
@@ -178,11 +184,6 @@ const styles = StyleSheet.create({
         padding: 15,
         flexDirection: 'row',
         justifyContent: 'center'
-    },
-    logo: {
-        width: 64,
-        height: 28,
-        resizeMode: 'center'
     },
     icoSearch: {
         color: colors.txt_description,

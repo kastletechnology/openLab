@@ -8,7 +8,8 @@ import {
     TouchableOpacity,
     ScrollView,
     Dimensions,
-    TextInput
+    TextInput,
+    Alert,
 } from 'react-native'
 
 import Container from './../resources/components/Container'
@@ -53,7 +54,7 @@ class Details extends Component {
           
           xhr.addEventListener("readystatechange", function () {
             if (this.readyState === 4) {
-              console.log(this.responseText);
+              alert(this.responseText);
             }
           });
           
@@ -87,13 +88,13 @@ class Details extends Component {
                   source={ require('.././assets/Artboard3.jpg') }
                   />
               </ScrollView>
-              <ScrollView style={styles.slide4}>
-                <TextInput style={styles.amountinput}
+              <View style={styles.slide4}>
+                <TextInput style={styles.textinput}
                 autoCapitalize="none" 
                 autoCorrect={false} 
                 keyboardType='default' 
                 returnKeyType="next" 
-                placeholder='Currency: Amount  (e.g. HKD: 100)' 
+                placeholder='HKD Amount' 
                 placeholderTextColor='#bbb'
                 />
                 <TextInput style={styles.textinput}
@@ -108,7 +109,7 @@ class Details extends Component {
                      onPress={this.postMessage}>
                     <Text  style={styles.SolidButtonText}>INVEST</Text>
                 </TouchableOpacity> 
-            </ScrollView>
+            </View>
             </Swiper>
             
         </Container>
@@ -132,7 +133,7 @@ const styles = StyleSheet.create({
     textinput: {
         paddingLeft: 30,
         paddingRight: 30,
-        height: 200,
+        height: 50,
     },
     logo: {
         width: 64,
@@ -187,7 +188,7 @@ const styles = StyleSheet.create({
     },
     slide4: {
         flex: 1,
-      marginTop: 100  
+        justifyContent: 'center'
     },
     text: {
       color: '#fff',

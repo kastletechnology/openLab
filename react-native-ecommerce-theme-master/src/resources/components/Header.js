@@ -28,9 +28,9 @@ export default class Header extends Component {
 
     logout() {
       // TODO: logout function
+      this.props.navigation.navigate('Login')
     }
     render() {
-      
         return (
             <View style={styles.header}>
                 <View style={styles.menu_icon}>

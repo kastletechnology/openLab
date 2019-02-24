@@ -72,7 +72,7 @@ const routerConfig = {
   Home: {
     screen: Home,
   },
-  LogOut: {
+  Login: {
     screen: Login,
   },
   Details: {

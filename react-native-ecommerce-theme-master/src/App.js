@@ -25,7 +25,7 @@ import ListGrid from './screens/Listing/ListGrid'
 import ListSwiper from './screens/Listing/ListSwiper'
 import Login from './screens/Login'
 import Details from './screens/Details'
-
+import Profile from './screens/Profile'
 
 import DrawerContent from './DrawerContent'
 
@@ -77,6 +77,9 @@ const routerConfig = {
   },
   Details: {
     screen: Details
+  },
+  Profile: {
+    screen: Profile
   }
 }
 

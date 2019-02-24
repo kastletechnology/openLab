@@ -3,15 +3,46 @@ import {View, Text, TextInput, TouchableOpacity, Alert, Button, StyleSheet, Stat
 import config from '../../config.json';
 import Home from './Home'
 
+// The location, on the interweb, of the OBP API server we want to use.
+var apiHost = config.apiHost;
+var consumerKey = config.consumerKey;
+
 export default class LoginForm extends Component {
     
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            password: ''
+                username: '',
+                password: '',
+                dataSource: '',
         };
     }
+
+    // --- POST Method (Login)---
+    postMessage = () => {
+        headers_str ={
+            'Content-Type': 'application/json',
+            'Authorization': 'DirectLogin username=${this.state.username}, password=${this.state.password}, consumer_key=${consumerKey}'
+            }
+        console.log(headers_str);
+        fetch(apiHost + "/my/logins/direct", {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'DirectLogin username=skchanag, password=123456789Kk^^, consumer_key=5h5psolgvi1vhe452kwn20bcnwkcusw4vv4j3vjq'
+        }
+        })
+        .then((response) => response.text())
+        .then((responseText) => {
+            // if (responseJson.token == null)
+                alert(responseText);
+            // else
+            //     this.state.dataSource.token = teresponseJson.token;
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    } 
 
     render() {
         return (
@@ -24,7 +55,7 @@ export default class LoginForm extends Component {
                returnKeyType="next" 
                placeholder='Username' 
                placeholderTextColor='#bbb'
-               onChangeText={(text) => this.setState({username})}
+               onChangeText={username => this.setState({username})}
                />
 
                 <TextInput style = {styles.input}   
@@ -33,7 +64,7 @@ export default class LoginForm extends Component {
               placeholder='Password' 
               placeholderTextColor='#bbb' 
               secureTextEntry
-              onChangeText={(text) => this.setPassword({password})}/>
+              onChangeText={(password) => this.setState({password})}/>
 
             <TouchableOpacity style={styles.TransparentButtonContainer} 
                      onPress={function(){ console.log('Forgot clicked') }}>
@@ -41,7 +72,7 @@ export default class LoginForm extends Component {
             </TouchableOpacity> 
 
             <TouchableOpacity style={styles.SolidButtonContainer} 
-                     onPress={function(){ console.log('Login clicked', ) }}>
+                     onPress={this.postMessage}>
                 <Text  style={styles.SolidButtonText}>LOGIN</Text>
             </TouchableOpacity> 
 

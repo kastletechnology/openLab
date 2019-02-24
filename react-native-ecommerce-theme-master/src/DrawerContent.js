@@ -52,7 +52,7 @@ class DrawerContent extends Component {
 const styles = StyleSheet.create({
     holder: {
         flex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.9)'
+        backgroundColor: 'rgba(0, 0, 0, 0)'
     },
     avatar: {
         justifyContent: 'center',

@@ -52,7 +52,7 @@ const options = {
     paddingTop: 0, // This only works if you modify DrawerNavigator.js to pass style props. See link
   },
 };
-
+// 
 const styles = StyleSheet.create({
   icon: {
     width: 24,
@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
 const LineT = () => <View><Text>yy</Text></View>
 
 const routerConfig = {
+  Login: {
+    screen: Login,
+  },
   ListSwiper: {
     screen: ListSwiper,
   },
@@ -72,9 +75,6 @@ const routerConfig = {
   Home: {
     screen: Home,
   },
-  Login: {
-    screen: Login,
-  },
   Details: {
     screen: Details
   }
@@ -82,7 +82,7 @@ const routerConfig = {
 
 const MyApp = DrawerNavigator(routerConfig, options);
 
-const defaultGetStateForAction = MyApp.router.getStateForAction;
-console.log(defaultGetStateForAction)
+// const defaultGetStateForAction = MyApp.router.getStateForAction;
+// console.log('defaultGetStateForAction',defaultGetStateForAction)
 
 AppRegistry.registerComponent('ecommercematerialtheme', () => MyApp);

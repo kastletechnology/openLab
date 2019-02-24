@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, View, ActivityIndicator, Image, Button, Text} from 'react-native';
 import LoginForm from './LoginForm';
-
+import ListGrid from './Listing/ListGrid'
 export default class Login extends Component {
+  token = false;
     // componentDidMount () {
 
     //     // --- POST Method (Login)---
@@ -35,22 +36,36 @@ export default class Login extends Component {
     // }
 
     render() {
+      return (
+        this._checkLogin()
+      );
+    }
+
+    _checkLogin() {
+      if (this.token === false) {
         return (
-            <View style={styles.container}>
-                <View style={styles.icon_container}>
-                    <Image
-                        style={ styles.logo }
-                        source={ require('.././assets/logo-f.png') }
-                        />
-                </View>
-                <View style={styles.formContainer}>
-                    <LoginForm />
-                </View>
+          <View style={styles.container}>
+            <View style={styles.icon_container}>
+              <Image
+                  style={ styles.logo }
+                  source={ require('.././assets/logo-f.png') }
+                  />
             </View>
-        );
+            <View style={styles.formContainer}>
+                <LoginForm />
+            </View>
+          </View>
+        )
+      } else {
+          return (
+            <ListGrid />
+          )
+      }
     }
 
 }
+
+
 const styles = StyleSheet.create({
     icon_container: {
         justifyContent: 'center',

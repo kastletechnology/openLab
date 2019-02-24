@@ -36,17 +36,23 @@ class Details extends Component {
     render() {
       return (
         <Container>
-            <Header navigation={this.props.navigation} title="Log Out"/>
+            <Header navigation={this.props.navigation} title="Tiffany Key Company"/>
             <Swiper style={styles.wrapper} showsButtons={true}>
-              <View style={styles.slide1}>
-                <Text style={styles.text}>Hello Swiper</Text>
-              </View>
-              <View style={styles.slide2}>
-                <Text style={styles.text}>Beautiful</Text>
-              </View>
-              <View style={styles.slide3}>
-                <Text style={styles.text}>And simple</Text>
-              </View>
+              <ScrollView style={styles.slide1}>
+                <Image
+                  source={ require('.././assets/Artboard-2.jpg') }
+                  />
+              </ScrollView>
+              <ScrollView style={styles.slide2}>
+                <Image
+                  source={ require('.././assets/Artboard-3.jpg') }
+                  />
+              </ScrollView>
+              <ScrollView style={styles.slide3}>
+                <Image
+                  source={ require('.././assets/Artboard-4.jpg') }
+                  />
+              </ScrollView>
             </Swiper>
         </Container>
       )
@@ -105,22 +111,13 @@ const styles = StyleSheet.create({
     wrapper: {
     },
     slide1: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#9DD6EB'
+      flex: 1
     },
     slide2: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#97CAE5',
+      flex: 1
     },
     slide3: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#92BBD9',
+      flex: 1
     },
     text: {
       color: '#fff',

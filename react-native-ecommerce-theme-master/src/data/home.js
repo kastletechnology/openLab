@@ -6,8 +6,8 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Tiffany Key Company',
-                imageUri: require('.././assets/dummy_icon/1.png'),
+                name: 'Kelvin Bee Company',
+                imageUri: require('.././assets/dummy_icon/4.png'),
                 prize: 1000000
             },
             {
@@ -18,14 +18,8 @@ const homeData = {
             },
             {
                 id: 3,
-                name: 'The FJH Music Company  ',
-                imageUri: require('.././assets/dummy_icon/3.png'),
-                prize: 2000000
-            },
-            {
-                id: 4,
                 name: '3AM Company',
-                imageUri: require('.././assets/dummy_icon/4.png'),
+                imageUri: require('.././assets/dummy_icon/3.png'),
                 prize: 800000
             },
         ]
@@ -37,26 +31,26 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Kelvin Bee Company ',
-                imageUri: require('.././assets/dummy_icon/5.png'),
-                prize: 1000000
+                name: 'Tiffany Key Company ',
+                imageUri: require('.././assets/dummy_icon/1.png'),
+                prize: 1500000
             },
             {
                 id: 2,
                 name: 'WCJ Company',
-                imageUri: require('.././assets/dummy_icon/6.png'),
+                imageUri: require('.././assets/dummy_icon/5.png'),
                 prize: 1000000
             },
             {
                 id: 3,
-                name: 'Power M Technology Company',
-                imageUri: require('.././assets/dummy_icon/7.png'),
+                name: 'Domain M Technology Company',
+                imageUri: require('.././assets/dummy_icon/6.png'),
                 prize: 1000000
             },
             {
                 id: 4,
                 name: 'Brooklynn Company',
-                imageUri: require('.././assets/dummy_icon/8.png'),
+                imageUri: require('.././assets/dummy_icon/7.png'),
                 prize: 1000000
             },
         ]
@@ -69,7 +63,7 @@ const homeData = {
             {
                 id: 1,
                 name: 'JIV Sport Company',
-                imageUri: require('.././assets/dummy_icon/9.png'),
+                imageUri: require('.././assets/dummy_icon/8.png'),
                 prize: 1500000
             },
             {
@@ -87,7 +81,7 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Kelvin Bee Company ',
+                name: 'Tiffany Key Company',
                 imageUri: require('.././assets/dummy_icon/5.png'),
                 prize: 80
             },
@@ -119,31 +113,31 @@ const homeData = {
     },
 
     grid_fashion: {
-        title: 'Fashion',
-        description: 'Best sale today',
+        title: 'Technology',
+        description: '',
         items: [
             {
                 id: 1,
-                name: 'Kelvin Bee Company ',
-                imageUri: require('.././assets/dummy_icon/5.png'),
+                name: 'Tiffany Key Company ',
+                imageUri: require('.././assets/dummy_icon/1.png'),
                 prize: 1500000
             },
             {
                 id: 2,
                 name: 'WCJ Company',
-                imageUri: require('.././assets/dummy_icon/6.png'),
+                imageUri: require('.././assets/dummy_icon/5.png'),
                 prize: 1000000
             },
             {
                 id: 3,
-                name: 'Power M Technology Company',
-                imageUri: require('.././assets/dummy_icon/7.png'),
+                name: 'Domain M Technology Company',
+                imageUri: require('.././assets/dummy_icon/6.png'),
                 prize: 1000000
             },
             {
                 id: 4,
                 name: 'Brooklynn Company',
-                imageUri: require('.././assets/dummy_icon/8.png'),
+                imageUri: require('.././assets/dummy_icon/7.png'),
                 prize: 1000000
             }
         ]

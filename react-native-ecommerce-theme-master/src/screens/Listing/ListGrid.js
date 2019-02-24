@@ -42,7 +42,7 @@ class ListGrid extends Component {
     render() {
         return (
             <Container>
-                <Header navigation={this.props.navigation} title="Grid List"/>
+                <Header navigation={this.props.navigation} title="FUNDESK"/>
                 <ScrollView>
                     {this._renderGridList(homeData.grid_fashion)}
                 </ScrollView>

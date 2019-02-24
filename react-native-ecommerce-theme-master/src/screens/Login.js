@@ -94,7 +94,7 @@ class Login extends Component {
         if(this.token === false) {
             return (
                 <Container>
-                    <Header navigation={this.props.navigation} title="Login"/>
+                    {/* <Header navigation={this.props.navigation} title="Login"/> */}
                     <View style={styles.container}>
                         <View style={styles.icon_container}>
                          <Image

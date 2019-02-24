@@ -7,7 +7,8 @@ import {
     StyleSheet,
     TouchableOpacity,
     ScrollView,
-    Dimensions
+    Dimensions,
+    TextInput
 } from 'react-native'
 
 import Container from './../resources/components/Container'
@@ -86,11 +87,27 @@ class Details extends Component {
                   source={ require('.././assets/Artboard3.jpg') }
                   />
               </ScrollView>
-              <ScrollView style={styles.slide3}>
-            <TouchableOpacity style={styles.SolidButtonContainer} 
+              <ScrollView style={styles.slide4}>
+                <TextInput style={styles.amountinput}
+                autoCapitalize="none" 
+                autoCorrect={false} 
+                keyboardType='default' 
+                returnKeyType="next" 
+                placeholder='Currency: Amount  (e.g. HKD: 100)' 
+                placeholderTextColor='#bbb'
+                />
+                <TextInput style={styles.textinput}
+                autoCapitalize="none" 
+                autoCorrect={false} 
+                keyboardType='default' 
+                returnKeyType="next" 
+                placeholder='Message' 
+                placeholderTextColor='#bbb'
+                />
+                <TouchableOpacity style={styles.SolidButtonContainer} 
                      onPress={this.postMessage}>
-                <Text  style={styles.SolidButtonText}>INVEST</Text>
-            </TouchableOpacity> 
+                    <Text  style={styles.SolidButtonText}>INVEST</Text>
+                </TouchableOpacity> 
             </ScrollView>
             </Swiper>
             
@@ -107,6 +124,15 @@ const styles = StyleSheet.create({
         padding: 15,
         flexDirection: 'row',
         justifyContent: 'center'
+    },
+    amountinput: {
+        paddingLeft: 30,
+        paddingRight: 30,
+    },
+    textinput: {
+        paddingLeft: 30,
+        paddingRight: 30,
+        height: 200,
     },
     logo: {
         width: 64,
@@ -158,6 +184,10 @@ const styles = StyleSheet.create({
     },
     slide3: {
       flex: 1
+    },
+    slide4: {
+        flex: 1,
+      marginTop: 100  
     },
     text: {
       color: '#fff',

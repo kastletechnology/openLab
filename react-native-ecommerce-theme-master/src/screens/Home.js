@@ -30,9 +30,9 @@ const initHeight = initWidth * (500/900)
 
 class Home extends Component {
     static navigationOptions = {
-        drawerLabel: 'Example Home',
+        drawerLabel: 'Bookmark',
         drawerIcon: ({ tintColor }) => (
-            <Icon style={styles.icon} name='home' size={20}/>
+            <Icon style={styles.icon} name='list' size={20}/>
         ),
     };
 

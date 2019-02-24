@@ -29,9 +29,9 @@ const initHeight = initWidth * (500/900)
 
 class ListGrid extends Component {
     static navigationOptions = {
-        drawerLabel: 'List Grid Material',
+        drawerLabel: 'History',
         drawerIcon: ({ tintColor }) => (
-            <Icon style={styles.icon} name='list' size={16}/>
+            <Icon style={styles.icon} name='list' size={20}/>
         ),
     };
 

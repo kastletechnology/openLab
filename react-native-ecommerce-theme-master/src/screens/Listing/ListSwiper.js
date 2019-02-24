@@ -29,9 +29,9 @@ const initHeight = initWidth * (500/900)
 
 class ListSwiper extends Component {
     static navigationOptions = {
-        drawerLabel: 'List Swiper Material',
+        drawerLabel: 'Home',
         drawerIcon: ({ tintColor }) => (
-            <Icon style={styles.icon} name='list' size={16}/>
+            <Icon style={styles.icon} name='home' size={16}/>
         ),
     };
 
@@ -42,7 +42,7 @@ class ListSwiper extends Component {
     render() {
         return (
             <Container>
-                <Header navigation={this.props.navigation} title="Swiper List"/>
+                <Header navigation={this.props.navigation} title="FUNDESK"/>
                 <ScrollView>
                     {this._renderSwiperList(homeData.fashions)}
                     {this._renderSwiperList(homeData.watches)}

@@ -3,7 +3,7 @@ import {Platform, StyleSheet, View, ActivityIndicator, Image, Button, Text} from
 import LoginForm from './LoginForm';
 import ListSwiper from './Listing/ListSwiper'
 export default class Login extends Component {
-  token = false;
+  token = true;
   
     render() {
       return (

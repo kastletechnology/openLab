@@ -40,17 +40,17 @@ class Details extends Component {
             <Swiper style={styles.wrapper} showsButtons={true}>
               <ScrollView style={styles.slide1}>
                 <Image
-                  source={ require('.././assets/Artboard-2.jpg') }
+                  source={ require('.././assets/Artboard1.jpg') }
                   />
               </ScrollView>
               <ScrollView style={styles.slide2}>
                 <Image
-                  source={ require('.././assets/Artboard-3.jpg') }
+                  source={ require('.././assets/Artboard2.jpg') }
                   />
               </ScrollView>
               <ScrollView style={styles.slide3}>
                 <Image
-                  source={ require('.././assets/Artboard-4.jpg') }
+                  source={ require('.././assets/Artboard3.jpg') }
                   />
               </ScrollView>
             </Swiper>

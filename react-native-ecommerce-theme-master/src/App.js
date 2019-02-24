@@ -63,11 +63,11 @@ const styles = StyleSheet.create({
 const LineT = () => <View><Text>yy</Text></View>
 
 const routerConfig = {
-  Login: {
-    screen: Login,
-  },
   ListSwiper: {
     screen: ListSwiper,
+  },
+  Login: {
+    screen: Login,
   },
   ListGrid: {
     screen: ListGrid,

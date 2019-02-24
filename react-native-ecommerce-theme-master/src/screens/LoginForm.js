@@ -20,28 +20,6 @@ export default class LoginForm extends Component {
 
     // --- POST Method (Login)---
     postMessage = () => {
-        // headers_str ={
-        //     'Content-Type': 'application/json',
-        //     'Authorization': 'DirectLogin username=${this.state.username}, password=${this.state.password}, consumer_key=${consumerKey}'
-        //     }
-        // console.log(headers_str);
-        // fetch(apiHost + "/my/logins/direct", {
-        //     method: 'POST',
-        //     headers: {
-        //     'Content-Type': 'application/json',
-        //     "Authorization": "DirectLogin username=skchanag, password=123456789Kk^^, consumer_key=5h5psolgvi1vhe452kwn20bcnwkcusw4vv4j3vjq",
-        // }
-        // })
-        // .then((response) => response.text())
-        // .then((responseText) => {
-        //     // if (responseJson.token == null)
-        //         alert(responseText);
-        //     // else
-        //     //     this.state.dataSource.token = teresponseJson.token;
-        // })
-        // .catch((error) => {
-        //     console.error(error);
-        // });
         var data = null;
 
         var xhr = new XMLHttpRequest();

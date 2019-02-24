@@ -87,11 +87,9 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Earing',
-                imageUri: require('.././assets/dummy_icon/1.png'),
-                prize: 80,
-                regularPrize: 100.00,
-                discountPercent: 20
+                name: 'Kelvin Bee Company ',
+                imageUri: require('.././assets/dummy_icon/5.png'),
+                prize: 80
             },
             {
                 id: 2,
@@ -126,34 +124,27 @@ const homeData = {
         items: [
             {
                 id: 1,
-                name: 'Earing',
+                name: 'Kelvin Bee Company ',
                 imageUri: require('.././assets/dummy_icon/5.png'),
-                prize: 80,
-                regularPrize: 100.00,
-                discountPercent: 20
+                prize: 1500000
             },
             {
                 id: 2,
-                name: 'iPhone 7 Plus 6S Plus 6 Plus Screen Protector',
+                name: 'WCJ Company',
                 imageUri: require('.././assets/dummy_icon/6.png'),
-                prize: 7.99,
-                regularPrize: 29.99,
-                discountPercent: 73
+                prize: 1000000
             },
             {
                 id: 3,
-                name: 'iPhone 7 Plus 6S Plus 6 Plus Screen Protector,',
+                name: 'Power M Technology Company',
                 imageUri: require('.././assets/dummy_icon/7.png'),
-                regularPrize: 39.99,
-                discountPercent: 25
+                prize: 1000000
             },
             {
                 id: 4,
-                name: 'Skip Hop Moby Bath Tear-Free Waterfall Rinser, Blue',
+                name: 'Brooklynn Company',
                 imageUri: require('.././assets/dummy_icon/8.png'),
-                prize: 8.00,
-                regularPrize: 10.00,
-                discountPercent: 20
+                prize: 1000000
             }
         ]
     },

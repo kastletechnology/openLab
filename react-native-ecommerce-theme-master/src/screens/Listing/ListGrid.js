@@ -45,7 +45,6 @@ class ListGrid extends Component {
                 <Header navigation={this.props.navigation} title="Grid List"/>
                 <ScrollView>
                     {this._renderGridList(homeData.grid_fashion)}
-                    {this._renderGridList(homeData.grid_bag)}
                 </ScrollView>
             </Container>
         )
@@ -66,7 +65,7 @@ class ListGrid extends Component {
     }
 
     _pressProduct(){
-        Utils.showMessage('You clicked on a product')
+        this.props.navigation.navigate('Details')
     }
 
     _pressSeeAllProducts(){
